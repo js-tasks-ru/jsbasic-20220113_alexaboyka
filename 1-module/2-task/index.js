@@ -11,6 +11,9 @@ function print(text) {
  */
 function isValid(name) {
   // ваш код...
+  let ForbiddenSymb = / /;
+  let result = name != undefined && name.length >= 4 && !ForbiddenSymb.test(name);
+  return result;
 }
 
 function sayHello() {
